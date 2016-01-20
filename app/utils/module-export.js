@@ -1,6 +1,6 @@
 export function foo () {}
 export function bar () {}
 export function baz () {}
-export function spam () {
-return true}
+export default function spam () {
+return true;}
 

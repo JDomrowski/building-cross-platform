@@ -10,3 +10,8 @@
  * You will need to export all four functions that you imported as your default
  * export.
  */
+
+import spam from "module-export";
+import foo from "module-export";
+import bar from "module-export";
+import baz from "module-export";
