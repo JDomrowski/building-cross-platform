@@ -50,3 +50,9 @@
  * discuss further in class.
  *
  */
+export default function({top,bottom,left,right}){
+  const a = right - left;
+  const b = bottom - top;
+
+  return Math.sqrt((a * a) + (b * b));
+}

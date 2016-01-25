@@ -69,6 +69,10 @@
 
 // export a function `is` that strictly compares `a` and `b`
 
+export function is(a,b){
+  return a === b;
+}
+
 // export a function `equal` that compares the structures of `a` and `b`.
 // for this exercise, we're going to assume that all objects have the following
 // shape, so we only need to compare values for that shape to determine equality
@@ -81,6 +85,26 @@
       left
     }
  */
+
+export function equal(a,b){
+  for(let i in a){
+    if (a.hasOwnProperty(i)){
+      if (!b.hasOwnProperty(i) || a[i] !== b[i]){
+        return false;
+      }
+    }
+  }
+  for (let i in b){
+    if (b.hasOwnProperty(i)){
+      if (!a.hasOwnProperty(i) || a[i] !== b[i]){
+        return false;
+      }
+    }
+  }
+return true;
+}
+
+
 // you can "brute force this", but ideally you will try to find an elegant solution
 // using either a `for in` loop with `object.hasOwnProperty` or a `for` loop with `Object.keys`
 // (you would have to look those things up on MDN.)

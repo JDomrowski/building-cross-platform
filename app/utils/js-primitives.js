@@ -8,16 +8,39 @@
  */
 
 // export `aString`, set it to a string value.
+const aString = 'stringValue';
 
 // export `aNull`, set it to a null value.
 
+const aNull = null;
+
 // export `anUndefined`, set it to an undefined value.
+
+const anUndefined = undefined;
 
 // export `aNumber`, set it to a Number value.
 
+const aNumber = 10;
+
 // export `aBoolean`, set it to a boolean value.
+
+const aBoolean = true;
 
 // export `anObject`, set it to be some object.
 
+const anObject = {};
+
 // export `aFunction`, set it to be some function.
+
+const aFunction = function(){};
+
+export default {
+  aString,
+  aNull,
+  anUndefined,
+  aNumber,
+  aBoolean,
+  anObject,
+  aFunction
+};
 

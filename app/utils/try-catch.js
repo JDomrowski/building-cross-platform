@@ -25,3 +25,20 @@
 // it should return `true`.  Finally, it should set the property `finished`
 // to `true` on the second argument.
 
+export function willError(){
+  throw new Error("This Will Error");
+}
+
+export default function(aFunction, aProperty){
+  try {
+    aFunction();
+    return true;
+  }
+
+  catch(error){
+    return false;
+  }
+finally{
+    aProperty.finished = true;
+  }
+}

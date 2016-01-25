@@ -31,8 +31,8 @@ export function negative (a,b){
 /*
  * export a function named `positive` which tests whether a variable is `true`.
  */
-export function positive (a,b){
-  return a===true && b===true;
+export function positive (a){
+  return a === true;
 }
 
 /*
@@ -59,14 +59,14 @@ export function any (a,b,c){
  * export a function named `isTrue` that returns whether a variable is `true`
  */
 
-export function isTrue (){
-  return {} === true;
+export function isTrue(a){
+  return positive(a);
 }
 
 /*
  * export a function named `isTruthy` that returns whether a variable is `truthy`
  */
 
-export function isTruthy (){
-  return {};
+export function isTruthy(a){
+  return !!a;
 }
